@@ -1,0 +1,66 @@
+create table data
+(
+username varchar2(200),
+fathername varchar2(200),
+mothername varchar2(200),
+address varchar2(200),
+mobileno number,
+useremail varchar2(200),
+userpassword varchar2(200)
+)
+------------------------------------------------------------------------------------------
+
+create table post
+(
+postid number,
+posttitle varchar2(200),
+postDescription varchar2(200),<!--postdiscription varchar2(200)-->
+useremail varchar2(200)
+)
+-------------------------------------------------------------------------------------------
+
+create table postrply
+(
+postid number,
+postrply varchar2(200),
+userEmail varchar2(200)
+)
+------------------------------------------------------------------------------------------
+
+create table teacherdata
+(
+username varchar2(200),
+fathername varchar2(200),
+mothername varchar2(200),
+address varchar2(200),
+designation varchar2(200),
+degree varchar2(200),
+mobileno number,
+useremail varchar2(200),
+userpassword varchar2(200)
+)
+-----------------------------------------------------------------------------------------
+
+create table whiteboard
+(
+username varchar2(20),
+useremail varchar2(20),
+whiteboardname varchar2(20)
+)
+----------------------------------------------------------------------------------------
+
+create table Notes
+(
+FILENAME	VARCHAR2(4000),	
+FILEUPLOAD	BLOB,
+FILENO	NUMBER,	
+FILEDATE	DATE,
+FILETOPIC	VARCHAR2(4000),
+USERNAME	VARCHAR2(4000)
+)
+
+-----------------------------------------------------------------------------------------
+insert into data values('shubham','sushil nirwan','vidushi nirwan','ghaziabad',8750336012,'shubhamnir97@gmail.com','shubham')
+insert into post values('101','html','what is html?','shubhamnir97@gmail.com')
+select * from data
+
